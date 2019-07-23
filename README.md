@@ -127,3 +127,33 @@ Your reduce will need to support:
 <p align="center">
     <img src="https://github.com/joinpursuit/Pursuit-Core-iOS-Unit1-Assignment3/blob/master/Images/cli-calculator.gif" width="800" height="598" />
 </p>
+
+```swift
+
+import UIKit
+
+var str = "Hello, playground"
+var leftnum = 0.0
+var rightnum = 0.0
+
+var operations: ([String: (Double, Double) -> Double]) = ["+": { $0 + $1 },
+"-": { $0 - $1 },
+"*": { $0 * $1 },
+"/": { $0 / $1 }]
+let userInput =
+
+func simpCalc(Operation: String, num1: Double, num2: Double) -> Double {
+
+
+func processInput() {
+let inputText = userInput.components(separatedBy: " ")
+var wrappedLeftNum = Double(inputText[0])
+if let num1 = wrappedLeftNum {
+leftnum = num1
+}
+var wrappedRightNum = Double(inputText[2])
+if let num2 = wrappedRightNum {
+rightnum = num2
+}
+}
+```
